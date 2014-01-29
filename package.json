@@ -8,6 +8,7 @@
     "build-js": "cat lib/js/head.min.js js/reveal.min.js > build/js/slides.js && cp lib/js/html5shiv.js build/js/",
     "build-css": "cat css/reveal.min.css css/theme/night.css lib/css/zenburn.css > build/css/app.css",
     "build-img": "cp img/* build/img",
+    "build-html": "cat html/top-dev.html html/slides.html html/bottom-dev.html > index.html"
     "build": "npm run build-js && npm run build-css && npm run build-img"
   },
   "repository": {
