@@ -1,0 +1,22 @@
+{
+  "name": "npm-paris-js",
+  "version": "0.0.0",
+  "description": "Slides for my talk about npm for Paris.js #33",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "cat lib/js/head.min.js js/reveal.min.js > build/js/slides.js && cp lib/js/html5shiv.js build/js/",
+    "build-css": "cat css/reveal.min.css css/theme/night.css lib/css/zenburn.css > build/css/app.css",
+    "build-img": "cp img/* build/img",
+    "build": "npm run build-js && npm run build-css && npm run build-img"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DjebbZ/npm-paris-js.git"
+  },
+  "author": "Khalid Jebbari <khalid.jebbari@gmail.com>",
+  "license": "CC BY 4.0",
+  "bugs": {
+    "url": "https://github.com/DjebbZ/npm-paris-js/issues"
+  }
+}
